@@ -9,6 +9,18 @@ public class SpittleNotFoundException extends RuntimeException {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 61498176231950759L;
+	private static final long serialVersionUID = 3475229467801081017L;
+	
+	private long spittleId;
+	
+	public SpittleNotFoundException(long spittleId) {
+		
+		this.spittleId = spittleId;
+	}
+	
+	public long getSpittleId(){
+		
+		return this.spittleId;
+	}
 
 }
